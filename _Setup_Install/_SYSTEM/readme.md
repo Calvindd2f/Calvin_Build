@@ -18,7 +18,7 @@ cd $env:windir\Paint_11.Dark_x64
 Add-AppxPackage -Register .\AppxManifest.xml
 ```
 
-## RAW ACCEL 1.4.4
+## Raw Accel 1.4.4
 ```powershell
 $zip = "$env:windir\RawAccel_v1.4.4.zip"
 $Download = 'https://github.com/Calvindd2f/Calvin_Build/raw/main/_Setup_Install/_SYSTEM/RawAccel_v1.4.4.zip'
