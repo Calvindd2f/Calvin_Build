@@ -96,7 +96,8 @@ reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "ctfmon" /t REG_
   
 # Very specific to my setup, not just software I use.  
 - Download & Install NVIDIA Drivers  
-Optionally use *NVCleaninstall* and *NVSlimmer* .  
+Optionally use *NVCleaninstall* and *NVSlimmer* .   
+Use Nvidia Profile Inspector & Enable rBAR - Feature.  
 - Enable MSI mode for GPU [required for 2080ti].  
 *https://download2435.mediafire.com/zxwaqo7uurqg/ewpy1p0rr132thk/MSI_util_v3.zip*
 - Enable Hardware Accelerated GPU Scheduling.
