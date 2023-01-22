@@ -1,4 +1,4 @@
-#Requires RunAsAdministrator
+#Requires -RunAsAdministrator
 
 # Install Modules
 Install-Module -Name psedit -Scope AllUsers
