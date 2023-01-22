@@ -17,3 +17,15 @@ cd $env:windir\Paint_11.Dark_x64
 # Register Appx
 Add-AppxPackage -Register .\AppxManifest.xml
 ```
+
+## RAW ACCEL 1.4.4
+```powershell
+$zip = "$env:windir\RawAccel_v1.4.4.zip"
+$Download = 'https://github.com/Calvindd2f/Calvin_Build/raw/main/_Setup_Install/_SYSTEM/RawAccel_v1.4.4.zip'
+Add-Type -AssemblyName 'System.IO.Compression.Filesystem' -ErrorAction SilentlyContinue
+Invoke-WebRequest -Uri $Download -OutFile $zip
+[IO.Compression.ZipFile]::ExtractToDirectory(('{0}' -f $zip),"$env:windir")
+cd $env:windir\RawAccel_v1.4.4
+# VCREDIST_AIO needs to be ran before installing driver
+# AFTERWARDS SCHEDULED TASK NEEDS TO BE CREATED TO RUN ON BOOT whether or not user is logged in
+```
