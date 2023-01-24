@@ -23,3 +23,11 @@ Write-Output 'sudo apt update && $~ sudo apt full-upgrade -yy' `` 'sudo apt inst
 Set-ItemProperty 'HKLM:\Software\Microsoft\Windows\CurrentVersion\RunOnce' -Name 'kali' -Value "wsl.exe --exec bash /mnt/c/TemporaryWSL/kali_shit_lol.sh'"
 & "$env:windir\system32\shutdown.exe" /r /t '10' /c 'WSL install wank'
 ```
+
+## New-wslconfig
+
+```powershell
+ni "$env:USERPROFILE/.wslconfig"
+echo "memory=4GB" >  "$env:USERPROFILE/.wslconfig"
+Restart-Service LxssManager
+```
